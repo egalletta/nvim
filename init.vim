@@ -23,7 +23,7 @@ else
 
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
-  source $HOME/.config/nvim/themes/nvcode.vim
+  source $HOME/.config/nvim/themes/dracula.vim
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim
@@ -72,3 +72,5 @@ endif
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+
+

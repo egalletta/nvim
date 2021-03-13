@@ -1,5 +1,5 @@
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-set formatoptions-=cro                  " Stop newline continution of comments
+set formatoptions-=co                  " Stop newline continution of comments
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -36,6 +36,7 @@ set timeoutlen=100                      " By default timeoutlen is 1000 ms
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set incsearch
 set guifont=JetBrainsMono\ Nerd\ Font
+colorscheme dracula
 
 " New stuff
 " set notimeout nottimeout
@@ -51,7 +52,10 @@ set guifont=JetBrainsMono\ Nerd\ Font
 " set foldcolumn=2                        " Folding abilities
 
 " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType * setlocal formatoptions-=c formatoptions-=o
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+" Python Docstring Formatting
+let g:ultisnips_python_style=0x4

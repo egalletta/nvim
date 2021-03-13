@@ -51,7 +51,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Closetags
     Plug 'alvan/vim-closetag'
     " Themes
-    Plug 'christianchiarulli/nvcode-color-schemes.vim'
+    " Plug 'christianchiarulli/nvcode-color-schemes.vim'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
@@ -79,6 +80,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/goyo.vim'
     " Snippets
     Plug 'honza/vim-snippets'
+    Plug 'SirVer/ultisnips'
     Plug 'mattn/emmet-vim'
     " Interactive code
     Plug 'metakirby5/codi.vim'
@@ -113,6 +115,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'szw/vim-maximizer'
     " Neovim in Browser
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(1) } }
+    " TOC
+    Plug 'mzlogin/vim-markdown-toc'
+    "Markdown Folding
+    Plug 'masukomi/vim-markdown-folding' 
     " Rainbow brackets
     " Plug 'luochen1990/rainbow'
     " Async Linting Engine
